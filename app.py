@@ -19,7 +19,7 @@ def predict():
     
     #load the test dataset:
     INPUT_LIB = 'E:/8th sem/nasa kaggle dataset/'
-    raw_data = np.loadtxt('exoTest.csv', skiprows=1, delimiter=',')
+    raw_data = np.loadtxt('exoTest_2.csv', skiprows=1, delimiter=',')
     x_test = raw_data[:, 1:]
     y_test = raw_data[:, 0, np.newaxis] - 1.
 
