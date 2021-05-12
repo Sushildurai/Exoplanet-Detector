@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Heart Disease Detector</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+.container {
+  width: 200px;
+  text-align: left;
+}
+
+.container input {
+  width: 100%;
+  text-align: left;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 align="middle"><img src="https://dejpknyizje2n.cloudfront.net/svgcustom/clipart/preview/clipart-11644-26958-300x300.png" align="left" style="height: 130px;width: 160px">LifeLine Hospital </h1>
+  <p>Saving lives since 1973</p>
+</div>
+
+
+
+  <div class="main" align="center">
+    <h2>
+      Welcome to Heart Disease Predictor!
+    </h2>
+    <p> Let's see if you have a heart disease.</p>
+
+
+  <p style="font-size: 18px"> <b>Please fill the information below</b> </p>
+    <div class="container">
+      <form id ="form_1" action="{{ url_for('predict')}}" method="POST">
+    <!-- <form id ="form_1" action="E:\7th sem\Web dev\Heart Hospital\sub_dir\heart_page.html" method='post' > -->
+  
+  
+  <input id ="click_submit" type="submit" value="Predict" style="font-size: 17px">
+
+</form>
+
+  </div>
+  {{ prediction_text }}
+</div>
+
+<div class="footer">
+  <h2>© 2020 LifeLine Hospital. All Rights Reserved.</h2>
+</div>
+
+</body>
+</html>
