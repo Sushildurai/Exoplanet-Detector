@@ -48,10 +48,10 @@ def predict():
     
 
     if pred[0] == 0:
-        return render_template('heart_page.html', prediction_text='Not exoplanet Detected: {}'.format(pred[1]))
+        return render_template('home_page.html', prediction_text='Not exoplanet Detected: {}'.format(pred[0]))
 
     elif pred[0] == 1:
-        return render_template('heart_page.html', prediction_text='Exoplanet Detected: {}'.format(pred[0]))
+        return render_template('home_page.html', prediction_text='Exoplanet Detected: {}'.format(pred[0]))
 
 
 if __name__ == "__main__":
