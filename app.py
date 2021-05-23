@@ -37,7 +37,7 @@ def predict():
     # output = round(prediction[0], 2)
     #output = prediction[0]
 
-    
+    pred=[]
     for i in range(len(predicted_model)):
         if predicted_model[i][0]<0.001:
             pred.append(0)
