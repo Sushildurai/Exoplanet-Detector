@@ -3,14 +3,8 @@ Flask==1.1.2
 cloudpickle==1.6.0
 pickleshare==0.7.5
 pylint==2.7.4
-sklearn==0.0
 scikit-learn==0.23.1
 scipy==1.4.1
-Keras==2.3.1
-Keras-Applications==1.0.8
-Keras-Preprocessing==1.1.0
-tensorflow==2.1.0
-tensorflow-estimator==2.1.0
 gunicorn==19.9.0
 itsdangerous==1.1.0
 Jinja2==2.10.1
